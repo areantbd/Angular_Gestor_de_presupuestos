@@ -1,0 +1,17 @@
+<div class="row mx-auto">
+  <div class="col-10 col-lg-6 mx-auto">
+    <h2 class="text-center text-light title">Presupuesto</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="text-center mb-2" *ngIf="cantidadError == true">
+          <span class="badge bg-danger error-text">EL presupuesto debe ser mayor que 0</span>
+        </div>
+        <input type="number" [(ngModel)]="cantidad" class="form-control form-control-lg" placeholder="Añadir presupuesto...">
+        <button 
+          class="btn btn-secondary btn-lg btn-block mt-2" 
+          (click)="validate()">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <button routerLink="">home</button> -->
