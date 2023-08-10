@@ -15,7 +15,7 @@ export class GastosComponent {
 
   constructor( private _presupuestoService: PresupuestoService, private router: Router) {
     this.presupuestoTotal = this._presupuestoService.presupuesto
-    this.restanteTotal = _presupuestoService.restante
+    this.restanteTotal = this._presupuestoService.restante
   }
 
   ngOnInit(): void {
