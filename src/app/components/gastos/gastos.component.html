@@ -1,4 +1,21 @@
+
+<div class="container">
+  <h2 class="text-center text-light title">Gastos</h2>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-6">
+          <app-sumar-gastos></app-sumar-gastos>
+        </div>
+        <div class="col-6">
+          <app-listar-gastos></app-listar-gastos>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button routerLink='/presupuesto' class="mt-5">presupuesto</button>
+
 <p class="text-light">Presupuesto: {{presupuestoTotal}}</p>
 <p class="text-light">Restante: {{restanteTotal}}</p>
-
-<button routerLink='/presupuesto'>presupuesto</button>
