@@ -24,7 +24,7 @@ export class SumarGastosComponent {
   anadirGasto(): void {
     if (this.cantidad > this._presupuestoService.restante) {
       this.formularioIncorrecto = true
-      this.textoIncorrecto = "Cantidad mayor que resto"
+      this.textoIncorrecto = "No tienes tanto dinero"
       return
     }
 

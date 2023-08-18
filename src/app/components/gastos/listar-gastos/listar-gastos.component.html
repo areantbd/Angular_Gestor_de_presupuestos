@@ -1,1 +1,31 @@
-<p>listar-gastos works!</p>
+<h4 class="text-center">Añadir gasto</h4>
+<hr>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="alert alert-success alert-size">
+      Presupuesto: <br> <strong>{{presupuesto}}</strong>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="alert alert-secondary alert-size">
+      Resto: <br> <strong>{{resto}}</strong>
+    </div>    
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let gasto of gastos" 
+      class="list-group-item d-flex align-items-center justify-content-evenly">
+      <strong>{{gasto.nombre.toUpperCase()}}: </strong>
+      <span class="badge rounded-pill bg-secondary">{{gasto.cantidad}} €</span>
+    </li>
+    </ul>
+  </div>
+</div>
+<!-- <div class="card" *ngFor="let gasto of gastos">
+  <div class="card-body">
+    <h5>{{gasto.nombre}}</h5>
+    <p>{{gasto.cantidad}}</p>
+  </div>
+</div> -->
